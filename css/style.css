@@ -38,9 +38,11 @@ h2 {
 }
 
 h3 {
-  font-size: 120%;
+  font-size: 150%;
   color: rgb(193, 125, 0);
   font-family: serif;
+  text-align: center;
+
 }
 
 p {
@@ -109,9 +111,6 @@ nav li {
     animation: none;
   }
 }
-h3 {
-  text-align: center;
-}
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -129,6 +128,11 @@ h3 {
 }
 .likes li {
   font-size: 120%;
-
+  border: 2px solid #ecaa5f;
+  margin-bottom: 5%;
+  padding: 2%;
 }
 
+hr {
+  border-top: 3px dashed #ecaa5f;
+}
