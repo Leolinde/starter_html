@@ -3,9 +3,6 @@ body {
   color: white;
 }
 
-nav {
-
-}
 
 a:visited {
   text-decoration: none; 
@@ -56,4 +53,64 @@ img {
 ul {
   display: inline-block;
   margin-left: 30px;
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    overflow-x: hidden;
+    height: 100%;
+  }
+  
+  nav{
+    width: 100%;
+    
+  }
+  nav ul {
+    margin-left: 0;
+    align-items: center;
+  }
+  nav li {
+    font-size: 130%;
+    margin-bottom:  5%;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+  }
+  .m-content-link{
+    display: none;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  .main-img{
+    width: 70%;
+    margin-left: 10%;
+    animation: fadeIn 5s;
+  }
+  @media (prefers-reduced-motion){
+    .main-img{
+      width: 70%;
+      margin-left: 10%;
+    }
+  }
+  h3{
+    text-align: center;
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .grid-item{
+    width: 70%;
+  }
+
+  .likes {
+    width: 90%;
+  }
 }
