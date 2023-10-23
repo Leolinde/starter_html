@@ -106,6 +106,7 @@ nav li {
   .main-img {
     width: 70%;
     margin-left: 10%;
+    animation: none;
   }
 }
 h3 {
