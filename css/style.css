@@ -1,12 +1,14 @@
 body {
-  background-color: #161618;
-  color: white;
+  background-color: white;
+  color: black;
+}
+.curr:visited {
+  color: rgb(193, 125, 0);
 }
 
-
 a:visited {
-  text-decoration: none; 
-  color: white; 
+  text-decoration: none;
+  color: #6aadff;
 }
 
 nav ul {
@@ -29,13 +31,15 @@ h1 {
 
 h2 {
   font-size: 250%;
-  color: #3e6493;
+  color: #1a539a;
   font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 h3 {
   font-size: 120%;
-  color: #9dc7cd;
+  color: rgb(193, 125, 0);
   font-family: serif;
 }
 
@@ -55,62 +59,75 @@ ul {
   margin-left: 30px;
 }
 
-@media only screen and (max-width: 600px){
-  body{
-    overflow-x: hidden;
-    height: 100%;
-  }
-  
-  nav{
-    width: 100%;
-    
-  }
-  nav ul {
-    margin-left: 0;
-    align-items: center;
-  }
-  nav li {
-    font-size: 130%;
-    margin-bottom:  5%;
-    width: 100%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+body {
+  height: 100%;
+}
 
-  }
-  .m-content-link{
+nav {
+  width: 100%;
+}
+nav ul {
+  margin-left: 0;
+  align-items: center;
+}
+nav li {
+  font-size: 130%;
+  margin-bottom: 5%;
+  width: 100%;
+  color: #135cb5;
+}
+
+
+@media (max-width: 1024px) {
+  .m-content-link {
     display: none;
   }
-  h2 {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  .main-img{
-    width: 70%;
-    margin-left: 10%;
-    animation: fadeIn 5s;
-  }
-  @media (prefers-reduced-motion){
-    .main-img{
-      width: 70%;
-      margin-left: 10%;
-    }
-  }
-  h3{
-    text-align: center;
-  }
-  .grid-container{
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-  .grid-item{
-    width: 70%;
-  }
+}
 
-  .likes {
-    width: 90%;
+
+.m-content-link:focus {
+  display: inline;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
+.main-img {
+  width: 70%;
+  margin-left: 10%;
+  animation: fadeIn 5s;
+}
+@media (prefers-reduced-motion) {
+  .main-img {
+    width: 70%;
+    margin-left: 10%;
+  }
+}
+h3 {
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.grid-item {
+  width: 70%;
+}
+
+.likes {
+  width: 90%;
+  list-style-type:none;
+  text-align: center;
+  padding-left: 0;
+  margin-left: 5%;
+}
+.likes li {
+  font-size: 120%;
+
+}
+
