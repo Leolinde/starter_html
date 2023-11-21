@@ -1,0 +1,5 @@
+@media (min-width: 1024px){
+    .grid-container{
+        background-image: url("/images/dots.jpeg");
+    }
+}

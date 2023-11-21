@@ -1,0 +1,36 @@
+@media (min-width: 768px){
+  
+    .hid{
+        display: inline-block;
+    }
+    .main-img {
+        animation: none;
+    }
+    .tablet-grid-container{
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+    .tablet-line-off{
+      display: none;
+    }
+    .tablet-item1{
+      grid-column: 1;
+      /* width: 20%; */
+    }
+    .tablet-item2{
+      grid-column-start: 2;
+    }
+
+    .pet-info {
+        overflow: hidden;
+        max-height: 0;
+    }
+    .pet-img.active .pet-info{
+        max-height: 100%;
+    }
+    .pet-img.active .hid {
+        display: none;
+    }
+
+    
+  }

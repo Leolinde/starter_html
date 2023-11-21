@@ -1,0 +1,30 @@
+@media (min-width: 1024px){
+
+    .m-content-link{
+       position: absolute;
+       transform: translateY(-500%);
+    }
+    .m-content-link:focus{
+        position: relative;
+        transform: translateY(0%);
+        
+    }
+
+    .tablet-grid-container  img:hover{
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        transition: 1s ease;
+    }
+    .tablet-grid-container  img{
+        transition: 1s ease;
+    }
+    nav {
+        /* background-image: url("images/background.pdf"); */
+        background-image: url("/images/background.avif");
+    }
+
+
+
+
+}

@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-tablet-recipes.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ultra&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/b71009a297.js" crossorigin="anonymous"></script>
     <title>Recipes</title>
   </head>
   <body>
@@ -12,55 +21,60 @@
     </header>
     <nav>
       <ul>
-        <li><a href="index.html">Pets</a></li>
-        <li><a href="travel.html">Travel</a></li>
-        <li><a href="recipes.html" class="curr">Recipies (Currently On)</a></li>
+        <li><a href="index.html"> <i class="fa-solid fa-dog"></i> Pets</a></li>
+        <li><a href="travel.html"> <i class="fa-solid fa-plane"></i> Travel</a></li>
+        <li><a href="recipes.html" class="curr"> <i class="fa-solid fa-bowl-food"></i> Recipies (Currently On)</a></li>
       </ul>
       <a class="m-content-link" href="#main-content">  Skip to main content</a>
 
     </nav>
 
     <main id="main-content">
-      <div>
-        <h2>Pesto Pasta</h2>
-        <img
-          src="images/pesto_pasta.jpg"
-          alt="Pesto Pasta"
-          class="main-img"
-        />
-        <p>
-          Pesto pasta has always been a comfort dish for me; it’s quick, it’s
-          easy, and great food for a dinner party or a comfy night in! It
-          requires six main ingredients, plus additional spices as you see fit.
-          If you’re not in the mood for pasta, you can always eat the pesto
-          sauce on bread, crackers, or eggs! This recipe makes enough for around
-          4 people, so adjust accordingly.
-        </p>
-        <h3>Photo Gallery</h3>
-        <div class="grid-container">
 
-        <img
-          src="images/dinner_spread.JPG"
-          alt="Four white bowls filled with pesto pasta are on a circular round table, with caprese salad, two wine bottles, and two candles in the middle. "
-          class="grid-item"
-        />
-        <img
-          src="images/pesto-on-a-baguette.jpg"
-          alt="Pesto spread on a small slice of white bread. "
-          class="grid-item"
-        />
-        <img
-          src="images/pesto-eggs.jpg"
-          alt="Sunny-side-up eggs cooked in pesto on 2 slices of bread on a white plate."
-          class="grid-item"
-        />
+      <div class="food">
+          <h2>Pesto Pasta</h2>
+          <div class="dropdown">
+          <img
+            src="images/pesto_pasta.jpg"
+            alt="Pesto Pasta"
+            class="main-img"
+          />
+          <p>
+            Pesto pasta has always been a comfort dish for me; it’s quick, it’s
+            easy, and great food for a dinner party or a comfy night in! It
+            requires six main ingredients, plus additional spices as you see fit.
+            If you’re not in the mood for pasta, you can always eat the pesto
+            sauce on bread, crackers, or eggs! This recipe makes enough for around
+            4 people, so adjust accordingly.
+          </p>
+          <h3>Photo Gallery</h3>
+          <div class="grid-container">
+
+          <img
+            src="images/dinner_spread.JPG"
+            alt="Four white bowls filled with pesto pasta are on a circular round table, with caprese salad, two wine bottles, and two candles in the middle. "
+            class="grid-item"
+          />
+          <img
+            src="images/pesto-on-a-baguette.jpg"
+            alt="Pesto spread on a small slice of white bread. "
+            class="grid-item"
+          />
+          <img
+            src="images/pesto-eggs.jpg"
+            alt="Sunny-side-up eggs cooked in pesto on 2 slices of bread on a white plate."
+            class="grid-item"
+          />
+          </div>
         </div>
-        <!-- Allison Lee -->
+          <!-- Allison Lee -->
       </div>
-      <hr>
 
-      <div>
+      <hr class="tablet-remove">
+
+      <div class="food">
         <h2>Dead Simple Fried Rice</h2>
+        <div class="dropdown">
         <img
           src="images/dead-simple-fried-rice-primary.jpg"
           alt="Fried Rice in pan"
@@ -94,11 +108,13 @@
           class="grid-item"
         />
         </div>
+        </div>
       </div>
-      <hr>
+      <hr class="tablet-remove">
 
-      <div>
+      <div class="food">
         <h2>Tomato and Eggs</h2>
+        <div class="dropdown">
         <img
           src="images/tomato-egg-main-image.jpeg"
           alt="picture of the park"
@@ -130,12 +146,14 @@
           class="grid-item"
         />
         </div>
+        </div>
         <!-- Joseph Schaubroeck-->
       </div>
-      <hr>
+      <hr class="tablet-remove">
 
-      <div>
+      <div class="food">
         <h2>Spicy Fried Chicken Sandwich</h2>
+        <div class="dropdown">
         <img
           src="images/spicy-chicken-sandwich-recipe.jpg"
           alt="Tower bridge of London"
@@ -161,10 +179,12 @@
         />
         </div>
       </div>
-      <hr>
+      </div>
+      <hr class="tablet-remove">
 
-      <div>
+      <div class="food">
         <h2>Sushi Bake</h2>
+        <div class="dropdown">
         <img
           src="images/sushiBake.jpeg"
           alt="Fried Rice in pan"
@@ -192,8 +212,10 @@
         />
         </div>
       </div>
+      </div>
+
     </main>
     <a href="#main-content">  Back to top</a>
-
+    <script src="script.js"></script>
   </body>
 </html>

@@ -26,7 +26,7 @@ nav li {
 h1 {
   font-size: 400%;
   text-align: center;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Ultra', serif;
 }
 
 h2 {
@@ -135,4 +135,9 @@ nav li {
 
 hr {
   border-top: 3px dashed #ecaa5f;
+}
+
+
+.hid{
+  display: none;
 }
