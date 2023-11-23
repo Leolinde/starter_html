@@ -9,7 +9,6 @@
         transform: translateY(0%);
         
     }
-
     .tablet-grid-container  img:hover{
         -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
@@ -23,6 +22,11 @@
         /* background-image: url("images/background.pdf"); */
         background-image: url("/images/background.avif");
     }
+
+    .tablet-grid-container{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+      }
 
 
 

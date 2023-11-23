@@ -1,7 +1,4 @@
 @media (min-width: 1024px){
-    .grid-container{
-        background-image: url("/images/dots.jpeg");
-    }
     .m-content-link{
         position: absolute;
         transform: translateY(-500%);
@@ -10,5 +7,12 @@
          position: relative;
          transform: translateY(0%);
          
+     }
+     
+     #main-content{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 1%;
+
      }
 }
